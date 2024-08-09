@@ -1,5 +1,4 @@
 import streamlit as st
-from openai import OpenAI
 from langchain_teddynote import logging
 from conversation_chain import EnglishConversationChain, SummaryChain, BlogChain
 
