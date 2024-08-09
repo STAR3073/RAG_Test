@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_teddynote import logging
 from conversation_chain import EnglishConversationChain, SummaryChain, BlogChain
 
-api_key = st.secrets["OPENAI_API_KEY "]
+api_key = st.secrets["OPENAI_API_KEY"]
 
 # 프로젝트 이름을 입력합니다.
 logging.langsmith("CH01-Basic")
