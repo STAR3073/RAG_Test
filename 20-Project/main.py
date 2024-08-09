@@ -1,10 +1,9 @@
-from dotenv import load_dotenv
-from langchain_teddynote import logging
 import streamlit as st
+from openai import OpenAI
+from langchain_teddynote import logging
 from conversation_chain import EnglishConversationChain, SummaryChain, BlogChain
 
-# API KEY 정보로드
-load_dotenv()
+api_key = st.secrets["OPENAI_API_KEY "]
 
 # 프로젝트 이름을 입력합니다.
 logging.langsmith("CH01-Basic")
